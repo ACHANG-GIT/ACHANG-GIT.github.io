@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>hexo 安装方法</title>
+    <url>/2020/05/09/hexo-%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h6 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli <span class="comment">#安装hexo到全局 -g: 全局安装</span></span><br></pre></td></tr></table></figure>
+<h6 id="生成hexo"><a href="#生成hexo" class="headerlink" title="生成hexo"></a>生成hexo</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo init <span class="comment">#在当前目录生成hexo配置</span></span><br></pre></td></tr></table></figure>
+<h6 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next .\themes\next</span><br><span class="line"><span class="comment">#下载next主题</span></span><br></pre></td></tr></table></figure>
+<h6 id="启用next主题"><a href="#启用next主题" class="headerlink" title="启用next主题"></a>启用next主题</h6><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span>  <span class="comment">#在此处更改主题</span></span><br></pre></td></tr></table></figure>
+<h6 id="部署设置"><a href="#部署设置" class="headerlink" title="部署设置"></a>部署设置</h6><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">'git'</span> <span class="comment">#使用git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">'git@github.com:ACHANG-GIT/ACHANG-GIT.github.io.git'</span> <span class="comment">#仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">'master'</span> <span class="comment">#分支</span></span><br></pre></td></tr></table></figure>
+<h6 id="下载部署工具"><a href="#下载部署工具" class="headerlink" title="下载部署工具"></a>下载部署工具</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h6 id="推送网站"><a href="#推送网站" class="headerlink" title="推送网站"></a>推送网站</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo g <span class="comment">#生成静态网页</span></span><br><span class="line">$ hexo d <span class="comment">#推送网站</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+  </entry>
+</search>
