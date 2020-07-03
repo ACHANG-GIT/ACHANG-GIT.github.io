@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>hexo和next主题安装与配置记录</title>
+    <url>/2020/05/13/hexo%E5%92%8Cnext%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[安装并配置 hexo 
+
+安装 hexo:$ npm install -g hexo-cli #安装hexo到全局 -g: 全局安装
+在当前目录生成 hexo 配置:
+$ hexo init #初始化hexo配置# 生成静态网页$ hexo s    #在本地生成静态页面并运行$ hexo clean #清除生成的静态页面
+
+done...
+
+
+配置 hexo:部署配置利用git将网站部署到 Github, 首先下载部署工具, hexo 配置根目录下运行以下命令
+$ npm install hexo-deployer-git --save
+
+打开 hexo 根目录下的 “_config.yml” 文件, 在末尾添加以下配置
+deploy:  type: 'git' #使用git  repo: 'git@github.com:ACHANG-GIT/ACHANG-GIT.github.io.git' #仓库地址 https/ssh 都可以  branch: 'master' #分支
+
+部署命令:
+hexo g  #生成静态页面hexo d  #推送到远程仓库
+
+to be continued...
+
+
+主题设置(next)
+
+基础配置(next):下载主题
+$ git clone https://github.com/theme-next/hexo-theme-next .\themes\next#下载next主题
+启用 next 主题, 在hexo根目录”_config.yml” 文件中找到 “theme:” 关键字 
+# Extensionstheme: next  #在此处更改主题
+
+打开 “.\themes\next_config.yml” 主题配置文件,  并找到 Scheme Settings 
+#scheme: Muse     #选择一个主题方案scheme: Mist#scheme: Pisces#scheme: Gemini
+
+自定义tags# next主题的 "_config.yml"文件tagcloud:  min: 16 # 最小px  max: 30 # 最大px  start: "#ccc" # Start color (hex, rgba, hsla or color keywords)  end: "#111" # End color (hex, rgba, hsla or color keywords)  amount: 200 # 标签最多数量
+
+to be continued...]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+</search>
